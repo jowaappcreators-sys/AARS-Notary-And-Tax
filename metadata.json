@@ -1,0 +1,5 @@
+{
+  "name": "AARS Notary And Tax",
+  "description": "Professional notary and tax services platform with document OCR, booking, video calls, and multilingual support.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
