@@ -27,6 +27,7 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 import { Language, User, Note, Booking, Archive, translations } from './types';
 import { extractTextFromImage } from './services/geminiService';
+import { ChatBot } from './components/ChatBot';
 
 // --- Components ---
 
@@ -1225,8 +1226,11 @@ export default function App() {
         </div>
       </main>
 
-      {/* Mobile Toggle */}
-      <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+      {/* ChatBot */}
+      <ChatBot lang={lang} />
+
+      {/* Mobile Toggle & Contact */}
+      <div className="fixed bottom-24 right-6 flex flex-col gap-3 z-50">
         <a 
           href="tel:9183134512"
           className="w-12 h-12 bg-emerald-500 text-white rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition-transform"
